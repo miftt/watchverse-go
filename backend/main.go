@@ -41,7 +41,9 @@ func main() {
 		protected.GET("/movies/trending", movieHandler.GetTrendingMovies)
 		protected.GET("/movies/popular", movieHandler.GetPopularMovies)
 		protected.GET("/movies/search", movieHandler.SearchMovies)
+		protected.GET("/movies/discover", movieHandler.DiscoverMovies)
 		protected.GET("/movies/:id", movieHandler.GetMovieDetails)
+		protected.GET("/movies/genres/:id", movieHandler.GetMovieByGenre)
 	}
 
 	r.Run(":8080")

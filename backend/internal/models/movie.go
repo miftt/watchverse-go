@@ -1,8 +1,9 @@
 package models
 
 type MovieResponse struct {
-	Page    int     `json:"page"`
-	Results []Movie `json:"results"`
+	Page       int     `json:"page"`
+	Results    []Movie `json:"results"`
+	TotalPages int     `json:"total_pages"`
 }
 
 type Genre struct {
