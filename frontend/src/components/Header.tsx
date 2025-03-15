@@ -46,6 +46,20 @@ const Header: React.FC<HeaderProps> = ({ searchQuery, onSearchChange, onSearchSu
           >
             Home
           </button>
+
+          <button 
+            onClick={() => navigate('/movies')} 
+            className="hover:text-blue-500 transition-colors"
+          >
+            Movies
+          </button>
+
+          <button 
+            onClick={() => navigate('/series')} 
+            className="hover:text-blue-500 transition-colors"
+          >
+            TV Series
+          </button>
           
           <button 
             onClick={handleLogout} 
